@@ -1,0 +1,137 @@
+body{
+    background-color: #F4F2EE;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    background: #F0F0F0;
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0.1em 0.5em 0.8em darkgray ;
+}
+
+.icon-logo, h1{
+    color: #093366;
+    font-size: 3em;
+    padding: 1.2rem 1rem;
+    font-weight: bold;
+}
+
+.text-title{
+    padding: 0 1rem !important;
+}
+
+.btn-listen{
+    display: flex;
+    margin: 0.5em;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#btn-listen__audio{
+    text-align: center;
+    background-color: #093366;
+    color: #F0F0F0;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 5em;
+    height: 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.text-box__translated{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.text-box__original-text{
+    margin: 0 2em;
+}
+
+.text-box__original-text textarea{
+    background-color: #F0F0F0;
+    border: 0.05em solid grey;
+    border-radius: 0.5rem;
+    margin: 0.7em 0;
+}
+
+.text-content{
+    background-color: #F0F0F0;
+    width: 50em;
+    height: 25em;
+    margin: 0 20%;
+    padding:0 1.7em;
+}
+
+.lang-opt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 2em 0 0.5em 0em;
+    height: 1.5em;
+}
+
+#transcript-text {
+    font-size: 1.2em;
+    padding: 1em;
+    font-weight: bold;
+}
+
+#text-to-translate {
+    font-size: 1.2em;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.text-form-original{
+    margin: 0;
+}
+
+#language{
+    margin: 0;
+    padding: 0.5em;
+    height: 2.5em;
+    border-radius: 0.5em;
+}
+
+.heading-text-area{
+    padding: 0.5em;
+    height: 2.5em;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    0% { background-color: #093366; }
+    50% { background-color: #145cb4; }
+    100% { background-color: #007BFF; }
+}
+
+/* Aplica a animação enquanto o botão está pressionado */
+#btn-listen__audio:active {
+    animation: blink 0.5s infinite; /* Pisca a cada 0.5s enquanto pressionado */
+}
+
+
+@media only screen and (max-width: 1024px){
+    .text-box__translated{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0;
+        margin: 0;
+        
+    }
+}

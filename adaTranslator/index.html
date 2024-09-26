@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+    <title>Ada Translator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/regular.css">
+    <link rel="stylesheet" href="assets/css/solid.css">
+    <link rel="stylesheet" href="assets/webfonts/fa-regular-400.ttf">
+</head>
+
+<body>
+    <div class="header">
+        <img src="/frontEnd/assets/img/translate-svgrepo-com.svg" alt="" class="icon-logo">
+        <h1>Ada Translator</h1>
+    </div>
+
+    <div class="text-box__translated">
+
+        <div class="text-box__original-text">
+            <div class="lang-opt">
+                <div class="heading-text-area">
+                    <span>Texto Original</span>
+                </div>
+                
+
+                <!-- <div class="btn-listen"> -->
+                    <a id="btn-listen__audio">
+                        <i class="fa-solid fa-microphone fa-xl"></i>
+                        <span>Fale</span>
+                    </a>
+               <!-- </div> -->
+
+                <select name="original_language" id="original_language">
+                    <option value="pt"> Português </option>
+                    <option value="en"> Inglês </option>
+                    <option value="es"> Espanhol </option>
+                </select>
+            </div>
+            <div class="text-form-original">
+                <textarea name="original-text" id="text-to-translate" rows="15" cols="65"></textarea>
+            </div>
+            
+        </div>
+
+        <div class="text-box__original-text">
+            <div class="lang-opt">
+                <div class="heading-text-area">
+                    <span>Texto Traduzido</span>
+                </div>
+                
+
+                <select name="translated_language" id="translated_language">
+                    <option value="pt"> Português </option>
+                    <option value="en"> Inglês </option>
+                    <option value="es"> Espanhol </option>
+                </select>
+            </div>
+            <div class="text-form-original">
+                <textarea name="original-text" id="transcript-text" rows="15" cols="65"></textarea>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="app/translateTextConnection.js"></script>
+<script src="app/app.js"></script>
