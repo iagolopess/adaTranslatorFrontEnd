@@ -1,0 +1,46 @@
+.header-content {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    background: #F0F0F0;
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0.1em 0.5em 0.8em darkgray;
+}
+
+#text-to-translate {
+    font-size: 1.2em;
+    padding: 1em;
+    font-weight: bold;
+}
+
+#transcript-text {
+    font-size: 1.2em;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.text-box__translated {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+
+}
+
+.heading-text-area {
+    padding: 0.5em;
+    height: 2.5em;
+    font-weight: bold;
+}
+
+
+.text-content {
+    background-color: #F0F0F0;
+    width: 50em;
+    height: 25em;
+    margin: 0 20%;
+    padding: 0 1.7em;
+}

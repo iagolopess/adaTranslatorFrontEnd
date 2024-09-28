@@ -1,0 +1,16 @@
+/* animations.css */
+@keyframes blink {
+    0% {
+        background-color: #093366;
+    }
+    50% {
+        background-color: #145cb4;
+    }
+    100% {
+        background-color: #007BFF;
+    }
+}
+
+#btn-listen__audio:active {
+    animation: blink 0.5s infinite;
+}
