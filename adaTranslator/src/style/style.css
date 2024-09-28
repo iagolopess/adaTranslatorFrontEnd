@@ -1,0 +1,7 @@
+/* style.css */
+@import url('reset.css');         /* Primeira coisa: reset dos estilos */
+@import url('base.css');          /* Estilos básicos globais */
+@import url('layout.css');        /* Estrutura da página */
+@import url('components.css');    /* Estilos de componentes */
+@import url('animations.css');    /* Animações */
+@import url('media-queries.css'); /* Responsividade */

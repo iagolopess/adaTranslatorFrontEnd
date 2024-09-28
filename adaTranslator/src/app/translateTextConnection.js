@@ -1,7 +1,11 @@
+
 async function connectWithBackEnd (textToTranslate, language) {
     try {
         console.log('Enviando requisição ao backend:', textToTranslate, language);
-        const response = await fetch('https://adatranslatorbackend-production.up.railway.app/translate', {
+        
+        let apiKey = getEnvStuff();
+
+        const response = await fetch(apiKey.API_PATH, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -17,9 +21,9 @@ async function connectWithBackEnd (textToTranslate, language) {
         }
 
         const data = await response.json();
-        let textField = document.getElementById("transcript-text");
-        console.log('Resposta recebida do backend:', data);
-        textField.innerText = data.translated_text;
+        const textField = document.getElementById("transcript-text");
+        textField.value = data.translated_text;
+
     } catch (error) {
         console.error('Erro na requisição fetch:', error);
     }
