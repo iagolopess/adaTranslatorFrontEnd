@@ -3,9 +3,7 @@ async function connectWithBackEnd (textToTranslate, language) {
     try {
         console.log('Enviando requisição ao backend:', textToTranslate, language);
         
-        let apiKey = getEnvStuff();
-
-        const response = await fetch(apiKey.API_PATH, {
+        const response = await fetch("https://adatranslatorbackend-production.up.railway.app/translate", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
