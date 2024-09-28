@@ -4,22 +4,21 @@ Este projeto é uma aplicação Python que utiliza reconhecimento de fala para c
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
-| :sparkles: Nome        | **API para Tradução**
-| :label: Tecnologias | Python
+| :sparkles: Nome        | **Front End Ada Translator**
+| :label: Tecnologias | JavaScript
 | :rocket: URL         | 
 | :fire: Desafio     | 
 
 
 Pré-requisitos
-Antes de executar o projeto, você precisa ter o Python instalado em sua máquina. Você também precisará de uma chave de API do Google para utilizar a funcionalidade de tradução e detecção de idioma.
+Antes de executar o projeto, você precisa ter o NodeJs instalado em sua máquina. 
 
 Uso
 Acesse a aplicação no seu navegador.
-Clique no botão "Iniciar Reconhecimento de Fala".
-Fale algo em um idioma suportado.
+Escolha o idioma a ser traduzido e para qual idioma traduzir
+Clique no botão "Iniciar Reconhecimento de Fala" ou "Traduzir Texto".
+
 O texto reconhecido e o idioma detectado serão exibidos na tela.
-Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou enviar um pull request.
 
 Licença
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
@@ -39,19 +38,5 @@ git clone https://github.com/iagolopess/adaTranslatorBackEnd
 cd seu-repositorio
 ```
 Crie um ambiente virtual (opcional, mas recomendado):
-
-Instale as dependências:
-
-```bash
-pip install -r requirements.txt
-```
-
-Executando a Aplicação
-Para iniciar o servidor Flask, execute:
-
-```bash
-python run.py
-A aplicação será executada em http://127.0.0.1:5000/.
-```
 
 
