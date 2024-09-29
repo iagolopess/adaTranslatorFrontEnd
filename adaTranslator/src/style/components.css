@@ -60,6 +60,7 @@
     margin: 0.7em 0;
     width: 38rem;
     height: 20rem;
+    resize: none;
 }
 
 .text-form-original {
