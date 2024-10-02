@@ -56,3 +56,6 @@ btnTranslateText.addEventListener("click", translateText)
 const btnSpeak = document.getElementById("btn-listen__audio");
 btnSpeak.addEventListener("mousedown", onSpeak);
 btnSpeak.addEventListener("mouseup", notSpeak);
+btnSpeak.addEventListener("touchstart", onSpeak);
+btnSpeak.addEventListener("touchend", notSpeak);
+
