@@ -43,7 +43,7 @@
 
 }
 
-@media only screen and (max-width: 425px) {
+/*@media only screen and (max-width: 425px) {
     .text-box__translated {
         margin: 0 0.2em;
     }
@@ -71,10 +71,10 @@
         margin-left: 14.5rem;
     }
 
-}
+}*/
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 430px) {
 
     .icon-logo{
         padding: 0.5rem 0.5rem 0.5rem 2rem;
